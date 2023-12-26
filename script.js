@@ -1,27 +1,11 @@
 
-// Objetos
 
-//let pessoa = {
-//    nome: 'Nildo',
-//    idade: 35,
-//    altura: 1.77,
-//    prossiçao: "Programador FullStack",
-//};
-//
-//console.log(pessoa);
-//
-//let carro = {
-//    nome: 'Golf 1.6',
-//    cor: 'Branco',
-//    potencia: '140cv',
-//}
-//
-//console.log(carro);
 
-let usuarios = [
-    {nome: "Nildo", cargo: "Programador", status: "ATIVO"},
-    {nome: "Silvia", cargo: "Aposentada", status: "ATIVO"},
-    {nome: "Junior", cargo: "Autonomo", status: "ATIVO"},
-];
+// Template strings
 
-console.log(usuarios);
+let nome = 'Nildo';
+let sobrenome = 'Galvino';
+let idade = 35;
+
+let mensagem = "Meu nome é  "+ nome+" "+ sobrenome +" e eu tenho "+idade +" anos de idade"
+console.log(mensagem);
