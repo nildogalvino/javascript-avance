@@ -1,42 +1,35 @@
 
 
 
-// Descontruir um Objeto
+// Spread Operator.
 
-
-let pessoa = {
-    nome: 'Nildo',
-    sobrenome: 'Galvino',
-    empresa: 'NG Tech',
-    cargo: 'Programador Fullstack',    
-};
-
-//console.log(pessoa.nome);
-//console.log(pessoa.cargo);
-
-//let nome = 'TESTE';
+//let primeiros = [1, 2, 3,];
 //
-//const { nome:nomePessoa, cargo, empresa, sobrenome } = pessoa;
-//
-//console.log('nome da pessoa ' + nomePessoa);
-//console.log(sobrenome);
-//
-//
-//console.log(cargo);
-//console.log(empresa);
+//let numeros = [...primeiros, 4, 5, 10];
+//console.log(numeros);
 
+//let pessoa = {
+    //nome: 'Maria',
+    //idade: 50,
+    //cargo: 'Secretaria'
+//};
 
+//let novaPessoa = {
+  // ...pessoa,
+  // status: 'ATIVO',
+  // cidade: 'Itamaraju / BA',
+  // telefone: '73 99983 8827'
+//};
+//console.log(novaPessoa);
 
-// ===========================================================
+function novoUsuario(info){
+    let dados = {
+    ...info,
+    status:'ATIVO',
+    inicio: '20/04/1988',
+    codigo: '12345'
+    };
+    console.log(dados);
+}
 
-
-let nomes = ['Maria', 'Jose', 'Joao'];
-
-//let {0:Maria, 2:terceiraPessoa } = nomes;
-//console.log(Maria);
-//console.log(terceiraPessoa);
-
-let [primeironome, segundonome, terceironome] = nomes;
-console.log(primeironome);
-console.log(segundonome);
-console.log(terceironome);
+novoUsuario({ nome:'Jose', sobrenome: 'Almeida', cargo: "DEV" });
