@@ -1,20 +1,16 @@
 
-// FIND
-let listagem = [5, 3, "Jose", 2, "Joao"]
+// includes, startWith, endsWith
 
-let busca = listagem.find((item)=>{
-   return item === "Jose";
-})
+//let nomes = ["Joao", "Maria", "Jose"];
+//
+//console.log(nomes.includes("Maria"));
+//
+//if(nomes.includes("Selma")){
+//    console.log("ESTA NA LISTA")
+//}else{
+//    console.log("NÃO ESTA NA LISTA")
+//}
 
-//console.log(busca);
+let nome = "Joao";
 
-// FILTER
-
-let palavras = ["Joao", "Maria", "Jose", "Pedro Silva", "Estudante de Programação", "Jose"]
-
-let resultado = palavras.filter((item)=>{
-    return item === "Jose";
-})
-
-console.log(resultado);
-
+console.log(nome.startsWith("Joa"));
